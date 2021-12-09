@@ -1,0 +1,73 @@
+[
+{
+    "id": 0,
+    "name": "Adidas Yeezy Boost 350 V2",
+    "brand": "Adidas",
+    "color": "Mono Cinder",
+    "price": "251",
+    "img_url": "https://images.stockx.com/360/adidas-Yeezy-Boost-350-V2-Mono-Cinder/Images/adidas-Yeezy-Boost-350-V2-Mono-Cinder/Lv2/img01.jpg?auto=compress&w=480&q=90&dpr=2&updated_at=1635434704&h=320&fm=jpg"
+}, {
+    "id": 1,
+    "name": "Jordan 1 Retro High OG",
+    "brand": "Jordan",
+    "color": "Seafoam (W)",
+    "price": "297",
+    "img_url": "https://cdn.shopify.com/s/files/1/0292/2748/3210/products/air-jordan-1-high-og-seafoam-w-1-1000.png?v=1628869449"
+}, {
+    "id": 2,
+    "name": "Adidas Ultra Boost DNA 5.0",
+    "brand": "Adidas",
+    "color": "Zebra",
+    "price": "145",
+    "img_url": "https://cdn.flightclub.com/750/TEMPLATE/273561/1.jpg"
+}, {
+    "id": 3,
+    "name": "Jordan 6 Retro Travis Scott",
+    "brand": "Jordan",
+    "color": "British Khaki",
+    "price": "432",
+    "img_url": "https://cdn.flightclub.com/TEMPLATE/207250/1.jpg"
+}, {
+    "id": 4,
+    "name": "Nike Air Force 1 Low",
+    "brand": "Nike",
+    "color": "Supreme Black",
+    "price": "164",
+    "img_url": "https://stockx.imgix.net/images/Nike-Air-Force-1-Low-Supreme-Box-Logo-Black-Product.jpg"
+}, {
+    "id": 5,
+    "name": "Nike Air VaporMax Plus",
+    "brand": "Nike",
+    "color": "Triple Black",
+    "price": "244",
+    "img_url": "https://images.stockx.com/images/Nike-Air-VaporMax-Plus-Triple-Black-2020-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1636046661"
+}, {
+    "id": 6,
+    "name": "adidas Ozweego",
+    "brand": "Adidas",
+    "color": "Core Black",
+    "price": "95",
+    "img_url": "https://images.stockx.com/images/adidas-Ozweego-Core-Black-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1612831154"
+}, {
+    "id": 7,
+    "name": "Jordan 12 Retro",
+    "brand": "Jordan",
+    "color": "Utility",
+    "price": "217",
+    "img_url": "https://images.stockx.com/images/air-jordan-12-retro-utility-grind-ps.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1628646034"
+}, {
+    "id": 8,
+    "name": "Nike Dunk High",
+    "brand": "Nike",
+    "color": "Game Royal",
+    "price": "204",
+    "img_url": "https://images.stockx.com/images/Nike-Dunk-High-Game-Royal-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1624468016"
+}, {
+    "id": 9,
+    "name": "Nike Space Hippie 01",
+    "brand": "Nike",
+    "color": "Obsidian",
+    "price": "105",
+    "img_url": "https://images.stockx.com/images/Nike-Space-Hippie-01-Obisidan-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1625757168"
+}
+]
