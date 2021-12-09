@@ -1,0 +1,107 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- general styling ---------- */
+html {
+    color: #313131; 
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 550px;
+    border: 1px solid lightgrey;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+/* ---------- nav bar styling ---------- */
+
+.header {
+    border-bottom: 1px solid #707070;
+}
+
+/* ---------- product list page styling ---------- */
+
+.products_header {
+    width: 100%;
+    height: 200px;
+    background-color: #DBDBDB;
+    text-align: left;
+}
+
+.products_h1 {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.products_p {
+    padding-left: 20px;
+    max-width: 370px;
+}
+
+/* ---------- grid container styling ---------- */
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    gap: 1em;
+  }
+  
+  @media (min-width: 480px) {
+    .grid_container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .grid_container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  .grid_container > article {
+    text-align: left;
+    padding: 2em 1em;
+    background-color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #989696;
+  }
+  
+  .grid_container > article:hover {
+    box-shadow: 0 8px 16px 0 #6C7689;
+  }
+
+  .grid_container > div {
+  }
+  
+  .grid_container > article img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-bottom: 1px solid #989696;
+  }
+
+  .grid_container > article h3 {
+    padding-bottom: 35px;
+    font-size: 14px;
+    color: #989696;
+  }
+  
+  .grid_container .empty {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
