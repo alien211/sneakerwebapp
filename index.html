@@ -7,16 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Website for Sneaks2Peak company">
   <meta name="author" content="Nikola Prolic and Marcell Ilyés">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" type="image/png" href="">
 </head>
 
 <body>
   <header>
-    <h1 class="header">Sneaks2Peak</h1>
+    <a href="#/" class="nav-link" style="color: black;"><h1>Sneaks2Peak</h1></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <div id="myLinks">
+      <a href="#/" class="nav-link">Home</a>
+      <a href="#/products" class="nav-link">Product</a>
+      <a href="#contact">Something</a>
+      <a href="#about">Something</a>
+    </div>
   </header>
 
   <!-- PAGES -->
+
+  <!-- HOME PAGE -->
+  
+  <section id="home" class="page">
+
+  </section>
 
   <!-- PRODUCT LIST PAGE -->
 
@@ -34,6 +50,7 @@
 
 
   <!-- main js file -->
+  <script src="js/router.js"></script>
   <script src="js/main.js"></script>
 </body>
 

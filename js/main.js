@@ -1,10 +1,24 @@
 "use strict";
 
+// by MI = by Marcell Ilyes
+// by NP = by Nikola Prolic
+
+// Menu by NP
+
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
 /* ------- PRODUCT LIST page ------- */
 
 let _products = [];
 
-// fetch data from the artists json file
+// fetch data from the artists json file by MI
 
 async function fetchData() {
     const response = await fetch('json/sneakers.json');
@@ -16,7 +30,7 @@ async function fetchData() {
 
 fetchData();
 
-//append products to the DOM
+//append products to the DOM by MI
 
 function appendProducts(products) {
     let htmlTemplate = "";
