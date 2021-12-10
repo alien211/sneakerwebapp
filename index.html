@@ -47,35 +47,34 @@
         <p class="products_p">Here you can see all the sneakers that people are selling, check out if the one you're looking for
           is available. In case you're just browsing, you can use filters and sort the sneakers to help you find the perfect pair.
         </p>
-    </div>
+      </div>
       <img src="media/sneakers.jpg">
     </section>
 
-<<<<<<< Updated upstream
-    <section class="products-section">
-      <div id="gridProducts" class="grid_container"></div>
-    </section>
-=======
-    <section class="tools_grid">
-
-      <label for="sortBy"><br>
+    <div class="filters">
+      <label for="sortBy">
         <select id="sortByBrand" class="tools_grid_container" onchange="filterByBrand(this.value)">
         <option selected disabled>Brands:</option>
       </select>
       </label>
 
-      <label for="sortBy"><br>
+      <label for="sortBy">
         <select id="sortBy" class="tools_grid_container" onchange="orderBy(this.value)">
         <option value="" selected disabled>Order by:</option>
         <option value="name">Name</option>
         <option value="price">Price</option>
       </select>
       </label>
+    </div>
+
+    <section class="products-section">
+      <div id="gridProducts" class="grid_container"></div>
+    </section>
+    <section class="tools_grid">
 
     </section>
 
     <section id="gridProducts" class="grid_container"></section>
->>>>>>> Stashed changes
 
   </section>
 

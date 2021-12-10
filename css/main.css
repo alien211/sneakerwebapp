@@ -249,6 +249,15 @@ header h1 {
 
   /* ---------- tools grid styling ---------- */
 
+  .filters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
   .tools_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -262,6 +271,7 @@ header h1 {
     border: 1px solid #6C7689;
     height: 50px;
     width: 190px;
+    margin: 8px 16px;
   }
   
   @media (min-width: 420px) {
