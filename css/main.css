@@ -181,7 +181,7 @@ header h1 {
     gap: 1em;
   }
   
-  @media (min-width: 480px) {
+  @media (min-width: 375px) {
     .grid_container {
       grid-template-columns: 1fr 1fr;
     }
@@ -200,13 +200,14 @@ header h1 {
     transition: 0.3s;
     cursor: pointer;
     border: 1px solid #989696;
+    color: #313131;
   }
   
   .grid_container > article:hover {
     box-shadow: 0 8px 16px 0 #6C7689;
   }
 
-  .grid_container > div {
+  .grid_container > article div {
   }
   
   .grid_container > article img {
@@ -214,15 +215,61 @@ header h1 {
     max-width: 250px;
     height: auto;
     border-bottom: 1px solid #989696;
+    padding-bottom: 20px;
+  }
+
+  .grid_container > article h4 {
+    padding-top: 10px;
   }
 
   .grid_container > article h3 {
     padding-bottom: 35px;
     font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
     color: #989696;
+    padding-top: 3px;
+  }
+
+  .grid_container > article h5 {
+    font-weight: normal;
+  }
+
+  .grid_container > article p {
+    padding-top: 3px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: -15px;
   }
   
   .grid_container .empty {
     grid-column: 1 / span 3;
     grid-row: 3;
+  }
+
+  /* ---------- tools grid styling ---------- */
+
+  .tools_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    justify-items: left;
+    padding-left: 1em;
+    padding-bottom: 10px;
+  }
+  
+  .tools_grid_container {
+    border: 1px solid #6C7689;
+    height: 50px;
+    width: 190px;
+  }
+  
+  @media (min-width: 420px) {
+    .tools_grid{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  .tools_grid label{
+    max-width: 350px;
   }
