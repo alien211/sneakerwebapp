@@ -15,6 +15,9 @@
 <body>
   <header>
     <a href="#/" class="nav-link" style="color: black;"><h1>Sneaks2Peak</h1></a>
+    <a href="#/myaccount" class="account-icon nav-link">
+      <div></div>
+    </a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
@@ -39,15 +42,25 @@
   <section id="products" class="page">
 
     <section class="products_header">
-        <h1 class="products_h1">Sneakers</h1>
+      <div>
+        <h1 class="products_h1">Sneakers</h1><br>
         <p class="products_p">Here you can see all the sneakers that people are selling, check out if the one you're looking for
-            is available. In case you're just browsing, you can use filters and sort the sneakers to help you find the perfect pair.</p>
+          is available. In case you're just browsing, you can use filters and sort the sneakers to help you find the perfect pair.
+        </p>
+    </div>
+      <img src="media/sneakers.jpg">
     </section>
 
-    <section id="gridProducts" class="grid_container"></section>
+    <section class="products-section">
+      <div id="gridProducts" class="grid_container"></div>
+    </section>
 
   </section>
 
+  <!-- ACCOUNT PAGE -->
+  <section id="account" class="page">
+
+  </section>
 
   <!-- main js file -->
   <script src="js/router.js"></script>

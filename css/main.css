@@ -64,7 +64,7 @@ header h1 {
 .icon {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   padding: 16px;
   color: black;
 }
@@ -73,30 +73,21 @@ header h1 {
   font-size: 24px;
 }
 
-@media screen and (min-width: 800px) {
-  section {
-    padding: 0 16%;
-  }
+.account-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  padding: 12px 8px 8px 8px;
+}
 
-  header {
-    padding: 0 16%;
-  }
-
-  h1, .icon {
-    position: relative;
-  }
-
-  header h1 {
-    float: left;
-  }
-
-  .icon {
-    float: right;
-  }
-
-  #myLinks {
-    margin-top: 56px;
-  }
+.account-icon div {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: url("/media/profile.jpg");
+  background-size: contain;
 }
 
 
@@ -105,23 +96,80 @@ header h1 {
 .products_header {
   position: relative;
   width: 100%;
-  height: 256px;
+  height: 240px;
   background-color: #DBDBDB;
   text-align: left;
   padding-top: 56px;
   z-index: 1;
 }
 
+.products_header div {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  margin: 16px;
+}
+
+.products_header img {
+  display: none;
+}
+
 .products_h1 {
-    font-size: 30px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 15px;
+  display: inline-block;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
 }
 
 .products_p {
-    padding-left: 20px;
-    max-width: 370px;
+  display: inline-block;
+  padding-left: 20px;
+  max-width: 370px;
+}
+
+@media screen and (min-width: 800px) {
+
+  .products_header {
+    height: 400px;
+  }
+
+  .products_header, .products-section {
+    padding: 0 16%;
+  }
+
+  .products_header img {
+    position: absolute;
+    display: block;
+    right: 16%;
+    bottom: 0;
+    height: 320px;
+    margin: 8px 16px;
+  }
+
+  header {
+    padding: 0 16%;
+  }
+
+  .icon {
+    right: 0;
+  }
+
+  h1, .icon, .account-icon {
+    position: relative;
+  }
+
+  header h1 {
+    float: left;
+  }
+
+  .icon, .account-icon {
+    float: right;
+  }
+
+  #myLinks {
+    margin-top: 56px;
+  }
 }
 
 /* ---------- grid container styling ---------- */
