@@ -13,9 +13,10 @@
 </head>
 
 <body>
+  <!-- NAVIGATION BAR -->
   <header>
     <a href="#/" class="nav-link" style="color: black;"><h1>Sneaks2Peak</h1></a>
-    <a href="#/myaccount" class="account-icon nav-link">
+    <a href="#/my-account" class="account-icon nav-link">
       <div></div>
     </a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -24,8 +25,8 @@
     <div id="myLinks">
       <a href="#/" class="nav-link">Home</a>
       <a href="#/products" class="nav-link">Product</a>
-      <a href="#contact">Something</a>
-      <a href="#about">Something</a>
+      <a href="#contact" class="nav-link">Something</a>
+      <a href="#/my-account" class="nav-link">My account</a>
     </div>
   </header>
 
@@ -80,12 +81,41 @@
 
   <!-- ACCOUNT PAGE -->
   <section id="account" class="page">
+    <section class="account_header">
+      <div class="account-info">
+        <div class="account-profile"></div>
+        <label><strong>Username</strong></label>
+      </div>
+    </section>
+    <nav class="tab-menu">
+      <div class="tablink" id="wish-link" onclick="openTab(event, 'Wishlist')"><h4>Wish list</h4></div>
+      <div class="tablink" id="sell-link" onclick="openTab(event, 'Selling')"><h4>Selling</h4></div>
+    </nav>
+
+    <section id="Wishlist" class="tab-content">
+      A WISH
+    </section>
+
+    <section id="Selling" class="tab-content">
+      A SALE
+
+      <a href="#/new-sale" class="nav-link">
+        <div class="add-btn">
+          <i class="fas fa-plus"></i>
+        </div>
+      </a>
+    </section>
+
+  </section>
+
+  <section id="sale" class="page">
 
   </section>
 
   <!-- main js file -->
   <script src="js/router.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/c96fa40f77.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

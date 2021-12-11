@@ -12,7 +12,6 @@
 html {
   color: #313131; 
   font-family: Arial, Helvetica, sans-serif;
-  height: 100%;
   text-align: center;
   margin: 0 auto;
   border: 1px solid lightgrey;
@@ -128,50 +127,6 @@ header h1 {
   max-width: 370px;
 }
 
-@media screen and (min-width: 800px) {
-
-  .products_header {
-    height: 400px;
-  }
-
-  .products_header, .products-section {
-    padding: 0 16%;
-  }
-
-  .products_header img {
-    position: absolute;
-    display: block;
-    right: 16%;
-    bottom: 0;
-    height: 320px;
-    margin: 8px 16px;
-  }
-
-  header {
-    padding: 0 16%;
-  }
-
-  .icon {
-    right: 0;
-  }
-
-  h1, .icon, .account-icon {
-    position: relative;
-  }
-
-  header h1 {
-    float: left;
-  }
-
-  .icon, .account-icon {
-    float: right;
-  }
-
-  #myLinks {
-    margin-top: 56px;
-  }
-}
-
 /* ---------- grid container styling ---------- */
 
 .grid_container {
@@ -282,4 +237,137 @@ header h1 {
   
   .tools_grid label{
     max-width: 350px;
+  }
+
+  /* ---------- my account page styling ---------- */
+
+  .account_header {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background-color: #DBDBDB;
+    padding-top: 56px;
+    z-index: 1;
+  }
+
+  .account-info {
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .account-profile {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: url("/media/profile.jpg");
+    background-size: contain;
+    margin-bottom: 16px;
+  }
+
+  .tab-menu {
+    background-color: #DBDBDB;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .tablink {
+    background-color: inherit;
+    color: #6C7689;
+    cursor: pointer;
+    width: 50%;
+    padding: 8px 0;
+    text-align: center;
+  }
+  
+  .tab-menu div:hover {
+    color: black;
+  }
+  
+  .tab-menu div:active {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .tablink:active {
+    color: black;
+  }
+
+  .tab-content {
+    min-height: calc(100vh - 274px);
+    z-index: 9998;
+  }
+
+  #Wishlist {
+    display: block;
+  }
+
+  #Selling {
+    display: none;
+  }
+
+  .add-btn {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 9999;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    color: white;
+    background-color: black;
+    font-size: 32px;
+    opacity: 0.85;
+  }
+
+  @media screen and (min-width: 800px) {
+
+    .products_header, .account_header {
+      height: 400px;
+    }
+  
+    header, .products_header, .products-section, .account_header, .tab-menu, .tab-content {
+      padding: 0 16%;
+    }
+  
+    .products_header img {
+      position: absolute;
+      display: block;
+      right: 16%;
+      bottom: 0;
+      height: 320px;
+      margin: 8px 16px;
+    }
+  
+    .icon {
+      right: 0;
+    }
+  
+    h1, .icon, .account-icon {
+      position: relative;
+    }
+  
+    header h1 {
+      float: left;
+    }
+  
+    .icon, .account-icon {
+      float: right;
+    }
+  
+    #myLinks {
+      margin-top: 56px;
+    }
+
+    .account-profile {
+      height: 160px;
+      width: 160px;
+    }
   }

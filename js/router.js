@@ -5,7 +5,8 @@
 const routes = {
   "#/": "home",
   "#/products": "products",
-  "#/myaccount": "account"
+  "#/my-account": "account",
+  "#/new-sale": "sale"
 };
 
 /**
@@ -77,7 +78,8 @@ let cUrl = window.location.href;
 
 if (
   cUrl.indexOf("products") != -1 ||
-  cUrl.indexOf("account") != -1 
+  cUrl.indexOf("account") != -1 ||
+  cUrl.indexOf("sale") != -1
 ) {
   menu.style.display = "flex";
 } else {
