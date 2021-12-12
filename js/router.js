@@ -5,6 +5,7 @@
 const routes = {
   "#/": "home",
   "#/products": "products",
+  "#/detailed_page": "detailed_page",
   "#/my-account": "account",
   "#/new-sale": "sale"
 };

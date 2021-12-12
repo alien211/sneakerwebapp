@@ -127,6 +127,22 @@ header h1 {
   max-width: 370px;
 }
 
+/* ---------- detailed product page styling ---------- */
+
+.back_icon {
+  width: 30px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.product_container > article img {
+  width: 100%;
+  opacity: 70%;
+  top: 0;
+  margin: 0 auto;
+}
+
 /* ---------- grid container styling ---------- */
 
 .grid_container {

@@ -14,7 +14,7 @@ function myFunction() {
     }
   }
 
-/* ------- PRODUCT LIST page ------- */
+/* ------- PRODUCT LIST page ------- */ //by MI
 
 let _products = [];
 let _brands = [];
@@ -58,7 +58,7 @@ function appendProducts(products) {
     document.querySelector('#gridProducts').innerHTML = htmlTemplate;
 }
 
-// sorting functions
+// sorting functions by MI
 
 function orderBy(option) {
     if (option === "name") {
@@ -84,7 +84,7 @@ function orderByPrice() {
     appendProducts(_products);
 }
 
-// append all brands as select options (dropdown)
+// append all brands as select options (dropdown) by MI
 
 function appendBrands(brands) {
     let htmlTemplate = "";
@@ -96,11 +96,26 @@ function appendBrands(brands) {
     document.querySelector('#sortByBrand').innerHTML += htmlTemplate;
 }
 
-// filter products by selected brand
+// filter products by selected brand by MI
 
 function filterByBrand(brand) {
     const results = _products.filter(product => product.brand === brand);
     appendProducts(results);
+}
+
+/* ------- Detailed artist page ------- */ //by MI
+
+function showDetailedPage(id) {
+  const productToShow = _products.find(product => product.id === id);
+  navigateTo("detailed_page");
+  document.querySelector("#detailed_page_container").innerHTML = /*html*/`
+      <article>
+      <h2>${productToShow.name}</h2>
+      <h3>${productToShow.color}</h3>
+      <img src ="${productToShow.img_url}">
+      <h4>${productToShow.price}</h4>
+      </article>
+  `;
 }
 
 // Account page tabs by NP
