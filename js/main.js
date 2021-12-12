@@ -103,12 +103,12 @@ function filterByBrand(brand) {
     appendProducts(results);
 }
 
-/* ------- Detailed artist page ------- */ //by MI
+/* ------- Detailed product page ------- */ //by MI
 
 function showDetailedPage(id) {
   const productToShow = _products.find(product => product.id === id);
-  navigateTo("detailed_page");
-  document.querySelector("#detailed_page_container").innerHTML = /*html*/`
+  navigateTo("#/detailed_page");
+  document.querySelector("#detailed_page_container").innerHTML = `
       <article>
       <h2>${productToShow.name}</h2>
       <h3>${productToShow.color}</h3>

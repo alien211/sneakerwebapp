@@ -80,7 +80,8 @@ let cUrl = window.location.href;
 if (
   cUrl.indexOf("products") != -1 ||
   cUrl.indexOf("account") != -1 ||
-  cUrl.indexOf("sale") != -1
+  cUrl.indexOf("sale") != -1 ||
+  cUrl.indexOf("detailed_page") != -1
 ) {
   menu.style.display = "flex";
 } else {
