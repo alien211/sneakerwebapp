@@ -137,10 +137,132 @@ header h1 {
 }
 
 .product_container > article img {
-  width: 100%;
-  opacity: 70%;
-  top: 0;
+  width: 300px;
+  position: relative;
+  top: 150px;
   margin: 0 auto;
+}
+
+.product_container > article h2 {
+  position: relative;
+  align-items: left;
+  text-align: left;
+  top: 140px;
+  left: 5%;
+  font-size: 25px;
+  color: #313131;
+}
+
+.product_container > article h3 {
+  position: relative;
+  align-items: left;
+  text-align: left;
+  top: 140px;
+  left: 5%;
+  font-size: 20px;
+  font-weight: 500;
+  color: #989696;
+}
+
+.product_container > article h4 {
+  position: relative;
+  align-items: left;
+  text-align: left;
+  top: 265px;
+  left: 50px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #313131;
+}
+
+.price_container {
+  position: absolute;
+  top: 500px;
+  left: 5%;
+  width: 90%;
+  height: 150px;
+  border: 1px solid #707070;
+  border-radius: 5%;
+}
+
+.dph1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.dph2 {
+  position: absolute;
+  top: 37px;
+  left: 10px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.tools_grid_container2 {
+  border: 1px solid #6C7689;
+  border-radius: 5%;
+  height: 50px;
+  width: 150px;
+  margin: 18px 208px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 5px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #006340; 
+  color: white; 
+  border: 2px solid #006340;
+  border-radius: 5%;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: #DA2C16; 
+  color: white; 
+  border: 2px solid #DA2C16;
+  border-radius: 5%;
+}
+
+.button2:hover {
+  background-color: #db6143;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: #707070;
+  border: 2px solid #707070;
+  border-radius: 5%;
+  padding: 15px 30px;
+  margin-top: 400px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+}
+
+.button3:hover {
+  background-color: #707070;
+  color: white;
 }
 
 /* ---------- grid container styling ---------- */
