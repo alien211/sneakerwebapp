@@ -45,13 +45,13 @@ function appendProducts(products) {
     for (let product of products) {
         htmlTemplate += /*html*/`
         <article onclick="showDetailedPage(${product.id})">
-        <img src="${product.img_url}">
-        <div>
-        <h4>${product.name}</h4>
-        <h3>${product.color}</h3>
-        <h5>Lowest Ask</h5>
-        <p>$${product.price}</p>
-        </div>
+          <img src="${product.img_url}">
+          <div>
+            <h4>${product.name}</h4>
+            <h3>${product.color}</h3>
+            <h5>Lowest Ask</h5>
+            <p>$${product.price}</p>
+          </div>
         </article>
     `;
     }

@@ -47,7 +47,7 @@ header h1 {
   display: none;
   margin-top: 11px;
   opacity: 0.85;
-  width: 100%;
+  width: calc(100% + 2px);
   margin-left: -2px;
   text-align: start;
 }
@@ -58,6 +58,8 @@ header h1 {
   color: white;
   background-color: black;
   padding: 16px 16vw;
+  height: calc(auto + 1px);
+  margin-top: -1px;
 }
 
 .icon {
@@ -465,13 +467,60 @@ header h1 {
     opacity: 0.85;
   }
 
+  /* create a sale page styling */
+
+  .sale_header {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background-color: #DBDBDB;
+    padding-top: 56px;
+    z-index: 1;
+  }
+
+  .sale_header h1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+  }
+
+  form {
+    padding: 2em 1em 2.5em;
+  }
+  
+  form button {
+    font-weight: 200;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    padding: 12px 15px;
+    font-size: 1em;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  input, select {
+    border: 1px solid black;
+    margin: 1em auto;
+    width: 100%;
+    max-width: 350px;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    display: block;
+  }
+
   @media screen and (min-width: 800px) {
 
-    .products_header, .account_header {
+    .products_header, .account_header, .sale_header {
       height: 400px;
     }
   
-    header, .products_header, .products-section, .account_header, .tab-menu, .tab-content {
+    header, .products_header, .products-section, .account_header, .tab-menu, .tab-content, .sale_header {
       padding: 0 16%;
     }
   

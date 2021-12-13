@@ -25,7 +25,6 @@
     <div id="myLinks">
       <a href="#/" class="nav-link">Home</a>
       <a href="#/products" class="nav-link">Products</a>
-      <a href="#contact" class="nav-link">Something</a>
       <a href="#/my-account" class="nav-link">My account</a>
     </div>
   </header>
@@ -35,7 +34,7 @@
   <!-- HOME PAGE -->
   
   <section id="home" class="page">
-
+    <!-- side sections za karusel-->
   </section>
 
   <!-- PRODUCT LIST PAGE -->
@@ -107,7 +106,7 @@
     <button class="button button1">Buy<br>or Bid</button>
     <button class="button button2">Sell<br>or Ask</button>
     </div>
-
+    
     <button class="button3">Add to your wishlist</button>
 
 
@@ -115,6 +114,7 @@
   </section>
 
   <!-- ACCOUNT PAGE -->
+
   <section id="account" class="page">
     <section class="account_header">
       <div class="account-info">
@@ -132,7 +132,8 @@
     </section>
 
     <section id="Selling" class="tab-content">
-      A SALE
+
+      <div id="gridSneakers" class="grid_container"></div>
 
       <a href="#/new-sale" class="nav-link">
         <div class="add-btn">
@@ -144,12 +145,31 @@
   </section>
 
   <section id="sale" class="page">
-
+    <section class="sale_header">
+      <h1>Create a sale</h1>
+    </section>
+    <!-- spa user crud jsonbin -->
+    <!-- spa canvas users -->
+    <!-- spa-firebase-login-movies -->
+    <form>
+      <input type="text" id="name" placeholder="Enter the name of the product" required>
+      <select id="brand" required>
+        <option selected disabled>Select the brand of the product</option>
+        <option value="">Adidas</option>
+        <option value="">Jordan</option>
+        <option value="">Nike</option>
+      </select>
+      <input type="text" id="color" placeholder="Enter the color of the product" required>
+      <input type="number" id="price" placeholder="State the price in USD" required>
+      <input id="img" type="text" name="img" placeholder="Paste image URL" required>
+      <button type="button" name="button" onclick="createUser()">Create User</button>
+    </form>
   </section>
 
   <!-- main js file -->
   <script src="js/router.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/jsonbin.js"></script>
   <script src="https://kit.fontawesome.com/c96fa40f77.js" crossorigin="anonymous"></script>
 </body>
 
