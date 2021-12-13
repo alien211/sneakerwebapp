@@ -23,7 +23,7 @@ async function loadSneakers() {
     });
     const data = await response.json();
     console.log(data);
-    _sneakers = data.record;
+    _sneakers = data;
     appendSneakers(_sneakers);
 }
 //loadSneakers();
