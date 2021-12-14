@@ -29,7 +29,7 @@ function initRouter() {
 initRouter();
 
 /**
- * Attaching event to nav links and preventing default anchor link event
+ * Attaching event to links and preventing default anchor link event
  */
 function attachNavLinkEvents() {
   const navLinks = document.querySelectorAll(".nav-link");

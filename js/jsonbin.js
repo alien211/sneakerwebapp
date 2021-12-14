@@ -29,7 +29,7 @@ async function loadSneakers() {
 loadSneakers();
 
 /**
- * Appends users to the DOM
+ * Appends sneakers to the DOM
  * @param {Array} sneakers
  */
 function appendSneakers(sneakers) {
@@ -64,9 +64,9 @@ async function createSale() {
   let colorInput = document.querySelector("#color");
   let priceInput = document.querySelector("#price");
   let imgInput = document.querySelector("#img");
-  // dummy generated user id
+  // dummy generated sneaker id
   const sneakerId = Date.now();
-  // declaring a new user object
+  // declaring a new sneaker object
   const newSneakers = {
     name: nameInput.value,
     brand: brandInput.value,
@@ -75,7 +75,7 @@ async function createSale() {
     img: imgInput.value,
     id: sneakerId
   };
-  // pushing the new user object to the _users array
+  // pushing the new sneaker object to the _users array
   _sneakers.push(newSneakers);
   // wait for update
   await updateJSONBIN(_sneakers);
@@ -91,7 +91,7 @@ async function createSale() {
 
 // ========== DELETE ==========
 /**
- * Deletes user by given user id
+ * Deletes user by given sneaker id
  * @param id 
  */
  async function deleteSenakers(id) {
@@ -106,7 +106,7 @@ async function createSale() {
  * @param {Array} sneakers 
  */
  async function updateJSONBIN(sneakers) {
-  // put users array to jsonbin
+  // put sneakers array to jsonbin
   const response = await fetch(_baseUrl, {
     method: "PUT",
     headers: _headers,
@@ -115,7 +115,7 @@ async function createSale() {
   // waiting for the result
   const result = await response.json(); // the new updated users array from jsonbin
   console.log(result);
-  //updating the DOM with the new fetched users
+  //updating the DOM with the new fetched sneakers
   appendSneakers(result.record);
 }
   
