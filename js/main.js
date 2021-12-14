@@ -56,6 +56,7 @@ function appendProducts(products) {
     `;
     }
     document.querySelector('#gridProducts').innerHTML = htmlTemplate;
+    document.querySelector('#gridWishes').innerHTML = htmlTemplate;
 }
 
 // sorting functions by MI

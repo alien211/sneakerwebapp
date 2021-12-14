@@ -1,3 +1,6 @@
+
+// All created by Nikola Prolić
+
 /**
  * All routes of the SPA
  * "path": "id of page in DOM"
@@ -40,7 +43,7 @@ function attachNavLinkEvents() {
 }
 
 /**
- * Navigating SPA to specific page by given pathnameß
+ * Navigating SPA to specific page by given pathname
  */
 function navigateTo(pathname) {
   hideAllPages();
@@ -73,24 +76,3 @@ function setActiveTab(pathname) {
     }
   }
 }
-
-//Hiding the menu for onboarding
-let cUrl = window.location.href;
-
-if (
-  cUrl.indexOf("products") != -1 ||
-  cUrl.indexOf("account") != -1 ||
-  cUrl.indexOf("sale") != -1 ||
-  cUrl.indexOf("detailed_page") != -1
-) {
-  menu.style.display = "flex";
-} else {
-  menu.style.display = "none";
-}
-
-window.showMenu = function () {
-  let navBar = document.querySelector(".tabbar");
-  if ((navBar.style.display = "none")) {
-    navBar.style.display = "flex";
-  }
-};
