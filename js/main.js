@@ -19,7 +19,7 @@ function myFunction() {
 let _products = [];
 let _brands = [];
 
-// fetch data from the artists json file by MI
+// fetch data from the sneakers json file by MI
 
 async function fetchData() {
     const response = await fetch('json/sneakers.json');
