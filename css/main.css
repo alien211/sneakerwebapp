@@ -14,7 +14,6 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin: 0 auto;
-  border: 1px solid lightgrey;
   overflow-x: hidden;
 }
   
@@ -138,18 +137,28 @@ header h1 {
   background-color: #DBDBDB;
   text-align: left;
   padding: 16px;
-  padding-right: 0;
+  padding-top: 32px;
 }
 
 .brand-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
   overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-top: 16px;
+}
+
+.brand-container::-webkit-scrollbar {
+  display: none;
 }
 
 .brand-container div {
-  height: 144px;
-  width: 160px;
+  height: 72px;
+  width: 72px;
   border: 1px solid balck;
   margin: 0 8px;
 }
@@ -423,6 +432,15 @@ header h1 {
     font-weight: 600;
     font-size: 20px;
     margin-bottom: -15px;
+  }
+
+  .grid_container > article button {
+    position: absolute;
+    padding: 4px 8px;
+    border: 1px solid black;
+    opacity: 0.8;
+    margin-bottom: 24px;
+    margin-left: 80px;
   }
   
   .grid_container .empty {

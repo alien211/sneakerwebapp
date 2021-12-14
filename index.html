@@ -197,6 +197,8 @@
 
   </section>
 
+  <!-- SALE PAGE -->
+
   <section id="sale" class="page">
     <section class="sale_header">
       <h1>Create a sale</h1>
@@ -208,14 +210,17 @@
       <input type="text" id="name" placeholder="Enter the name of the product" required>
       <select id="brand" required>
         <option selected disabled>Select the brand of the product</option>
-        <option value="">Adidas</option>
-        <option value="">Jordan</option>
-        <option value="">Nike</option>
+        <option value="Adidas">Adidas</option>
+        <option value="Jordan">Air Jordan</option>
+        <option value="Nike">Nike</option>
+        <option value="Yeezy">Yeezy</option>
+        <option value="NewBalance">New Balance</option>
+        <option value="Reebok">Reebok</option>
       </select>
       <input type="text" id="color" placeholder="Enter the color of the product" required>
       <input type="number" id="price" placeholder="State the price in USD" required>
-      <input id="img" type="text" name="img" placeholder="Paste image URL" required>
-      <button type="button" name="button" onclick="createUser()">Create User</button>
+      <input type="url" id="img" name="img" placeholder="Paste image URL" required>
+      <button type="button" name="button" onclick="createSale()">Create User</button>
     </form>
   </section>
 
