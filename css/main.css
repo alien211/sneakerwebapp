@@ -87,7 +87,7 @@ header h1 {
   height: 32px;
   border-radius: 50%;
   border: 1px solid black;
-  background-image: url("/media/profile.jpg");
+  background-image: url("/sneaks2peak/media/profile.jpg");
   background-size: contain;
 }
 
@@ -165,25 +165,25 @@ header h1 {
 
 #brand1 {
   background-color: white;
-  background-image: url("/media/jordans.png");
+  background-image: url("/sneak2peak/media/jordans.png");
   background-size: cover;
 }
 
 #brand2 {
   background-color: black;
-  background-image: url("/media/nike.jpg");
+  background-image: url("/sneaks2peak/media/nike.jpg");
   background-size: contain;
 }
 
 #brand3 {
   background-color: black;
-  background-image: url("/media/adidas.png");
+  background-image: url("/sneaks2peak/media/adidas.png");
   background-size: contain;
 }
 
 #brand4 {
   background-color: black;
-  background-image: url("/media/yzy.jpg");
+  background-image: url("/sneaks2peak/media/yzy.jpg");
   background-size: contain;
 }
 
@@ -512,7 +512,7 @@ header h1 {
     height: 80px;
     border-radius: 50%;
     border: 1px solid black;
-    background-image: url("/media/profile.jpg");
+    background-image: url("/sneaks2peak/media/profile.jpg");
     background-size: contain;
     margin-bottom: 16px;
   }
